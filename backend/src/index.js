@@ -7,7 +7,7 @@ import { config } from "dotenv";
 import errorMiddleware from "./middlewares/error-middleware.js";
 import cors from "cors";
 import path from "path";
-
+import dotenv from "dotenv";
 // CORS configuration
 const coreOptions = {
   origin: process.env.NODE_ENV === "production" ? "*" : "http://localhost:5173",
