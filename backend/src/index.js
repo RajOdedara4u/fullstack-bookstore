@@ -1,5 +1,5 @@
-import e from "express";
-const app = e();
+import express from "express";
+const app = express();
 import authRouter from "./router/auth-router.js";
 import Userrouter from "./router/user-router.js";
 import mongoCD from "./lib/db.js";
@@ -16,7 +16,7 @@ const coreOptions = {
 
 app.use(cors(coreOptions));
 config();
-app.use(e.json());
+app.use(express.json());
 app.use("/api", authRouter);
 app.use("/api", Userrouter);
 app.use(errorMiddleware);
