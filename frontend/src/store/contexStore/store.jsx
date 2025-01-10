@@ -14,7 +14,9 @@ export const AuthProvider = ({ children }) => {
   const [userData, suserData] = useState();
   const [isAdmin, sisAdmin] = useState();
   const BASE_URL =
-    import.meta.env.MODE === "development" ? "http://localhost:5001" : "/api";
+    import.meta.env.MODE === "development"
+      ? "http://localhost:5001/api"
+      : "/api";
 
   // Function to store token and save it in localStorage
   const storeToken = (newToken) => {
