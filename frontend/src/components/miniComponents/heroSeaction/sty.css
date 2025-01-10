@@ -1,0 +1,17 @@
+/* SlidingBackground.css */
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.animate-slide {
+  animation: slide 50s linear infinite;
+  background-image: url("../../../assets//books-bg.png");
+  background-repeat: repeat-x;
+  height: 85%;
+}
